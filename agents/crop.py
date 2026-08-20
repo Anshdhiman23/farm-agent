@@ -1,10 +1,14 @@
-from langchain_openai import ChatOpenAI
+from langchain_groq import ChatGroq
 from pydantic import BaseModel, Field
+from dotenv import load_dotenv
 
 from tools import get_soil_health_report
+load_dotenv()
 
-_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
-
+_llm = ChatGroq(
+    model="openai/gpt-oss-20b",
+    temperature=0
+)
 
 class CropDecision(BaseModel):
     recommended_crop: str = Field(description="One of: Wheat, Rice, Maize")

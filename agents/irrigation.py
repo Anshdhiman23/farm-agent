@@ -1,10 +1,15 @@
-from langchain_openai import ChatOpenAI
+from langchain_groq import ChatGroq
 from pydantic import BaseModel, Field
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from tools import get_weather_forecast
 
-_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
-
+_llm = ChatGroq(
+    model="openai/gpt-oss-20b",
+    temperature=0
+)
 
 class IrrigationDecision(BaseModel):
     decision: str = Field(description="One of: IRRIGATE, WAIT, NO IRRIGATION")

@@ -191,10 +191,10 @@ if submitted:
 
         st.write("**Crop Scores:**")
 
-        for crop_name, score in crop["scores"].items():
+        for crop_name, score in crop["rule_based_scores"].items():
             st.write(
-                f"- {crop_name}: {score}"
-            )
+            f"- {crop_name}: {score}"
+        )
 
         # Planting
         st.subheader("📅 Planting Schedule")
