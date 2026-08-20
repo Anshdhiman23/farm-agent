@@ -1,7 +1,7 @@
 [project]
 name = "farm-agent"
 version = "0.1.0"
-description = "Add your description here"
+description = "Agentic farm planning system: LLM-reasoning agents with tool access, orchestrated via a conditionally-branching LangGraph state machine."
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [

@@ -26,6 +26,7 @@ class FarmInput(BaseModel):
     available_workers: int = Field(ge=0)
 
     decisions: dict = {}
+    replan_count: int = Field(default=0, ge=0)
 
 
 class FarmState(TypedDict):
@@ -52,3 +53,4 @@ class FarmState(TypedDict):
     available_workers: int
 
     decisions: dict
+    replan_count: int
