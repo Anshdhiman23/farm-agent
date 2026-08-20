@@ -1,0 +1,25 @@
+{
+    "land_acres": 10,
+    "available_water_liters": 500000,
+    "capital": 500000,
+
+    "soil_n": 45,
+    "soil_p": 20,
+    "soil_k": 40,
+    "soil_ph": 6.8,
+    "soil_moisture": 32,
+
+    "temperature": 24,
+    "rainfall_forecast_mm": 5,
+
+    "current_crop": "",
+    "crop_growth_stage": "",
+    "planting_date": "",
+
+    "livestock_type": "cattle",
+    "livestock_count": 20,
+
+    "available_workers": 8,
+
+    "decisions": {}
+}
